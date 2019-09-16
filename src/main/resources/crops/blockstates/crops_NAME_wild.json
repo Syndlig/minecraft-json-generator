@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "cornucopia:block/crops_%1$s_wild" }
+  }
+}

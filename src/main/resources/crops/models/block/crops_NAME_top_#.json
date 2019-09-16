@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "%1$sucopia:block/crops_%1$s_top_%2$s"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "cornucopia:block/orchard_crop", 
+  "textures": {
+    "crop": "cornucopia:block/orchard_%1$s_crop_%3$s"
+  }
+}

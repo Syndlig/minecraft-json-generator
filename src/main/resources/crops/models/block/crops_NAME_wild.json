@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross", 
+  "textures": {
+    "cross": "cornucopia:block/crops_%1$s_crop_7"
+  }
+}

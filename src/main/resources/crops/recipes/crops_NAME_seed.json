@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cornucopia:crops_%1$s_raw"
+    }
+  ],
+  "result": {
+    "item": "cornucopia:crops_%1$s_seed"
+  }
+}

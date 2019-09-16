@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "cornucopia:orchard_%1$s_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft:%2$s_planks",
+    "count": 4
+  }
+}

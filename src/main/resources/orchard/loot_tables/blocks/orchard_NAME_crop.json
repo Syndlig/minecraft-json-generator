@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "cornucopia:orchard_%1$s_crop",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "name": "cornucopia:orchard_%1$s_raw"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "cornucopia:orchard_%1$s_crop",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "name": "cornucopia:orchard_%1$s_sapling"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
+}

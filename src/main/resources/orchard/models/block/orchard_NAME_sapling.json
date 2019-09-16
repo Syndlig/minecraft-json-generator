@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "cornucopia:item/orchard_%1$s_sapling"
+    }
+}
