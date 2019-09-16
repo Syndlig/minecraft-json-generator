@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.2.RELEASE")
+    }
+}
+
+apply plugin: 'java-library'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.syndlig'
+version = '0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    implementation group: 'org.springframework.boot',         name: 'spring-boot-starter',        version: '2.1.6.RELEASE'
+    implementation group: 'org.springframework.boot',         name: 'spring-boot-starter-log4j2', version: '2.1.6.RELEASE'
+    implementation group: 'org.slf4j',                        name: 'slf4j-api',                  version: '1.7.28'
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml',    version: '2.9.8'
+    implementation group: 'com.fasterxml.jackson.core',       name: 'jackson-databind',           version: '2.9.8'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootJar {
+    archivesBaseName = rootProject.name
+    version =  project.version
+    mainClassName = 'com.syndlig.generator.runner.main.MainRunner'
+}
+
+configurations.all {
+    exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
