@@ -16,7 +16,7 @@ public class CropGenerator extends Generator {
         cropName = cropName.toLowerCase().replace(' ', '_');
         String filePath = buildPath(directory, file.getName().replace("NAME", cropName));
         if (filePath.contains("#")) {
-            for (int i = 1; i <= 7; i++) {
+            for (int i = 0; i <= 7; i++) {
                 write(createJson(file, cropName, String.valueOf(i)), filePath.replace("#", String.valueOf(i)));
             }
         } else {

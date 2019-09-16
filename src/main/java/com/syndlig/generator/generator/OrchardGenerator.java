@@ -13,7 +13,7 @@ public class OrchardGenerator extends Generator {
         orchardName = orchardName.toLowerCase();
         String filePath = buildPath(directory, file.getName().replace("NAME", orchardName));
         if (filePath.contains("#")) {
-            for (int i = 1; i <= 3; i++) {
+            for (int i = 0; i <= 3; i++) {
                 write(createJson(file, orchardName, tree, String.valueOf(i)), filePath.replace("#", String.valueOf(i)));
             }
         } else {
